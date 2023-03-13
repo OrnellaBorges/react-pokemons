@@ -1,17 +1,11 @@
-import badgeRoche from "../assets/Badge_Roche_Kanto.png"
-import badgeCascade from "../assets/Badge_Cascade_Kanto.png"
-import badgeFoudre from "../assets/Badge_Foudre_Kanto.png"
-import badgePrisme from "../assets/Badge_Prisme_Kanto.png"
-import badgeAme from "../assets/Badge_Âme_Kanto.png"
-import badgeMarais from "../assets/Badge_Marais_Kanto.png"
-import badgeVolcan from "../assets/Badge_Volcan_Kanto.png"
-import badgeTerre from "../assets/Badge_Terre_Kanto.png"
-
-
-
-
-
-
+import badgeRoche from "../assets/badges/Badge_Roche_Kanto.png"
+import badgeCascade from "../assets/badges/Badge_Cascade_Kanto.png"
+import badgeFoudre from "../assets/badges/Badge_Foudre_Kanto.png"
+import badgePrisme from "../assets/badges/Badge_Prisme_Kanto.png"
+import badgeAme from "../assets/badges/Badge_Âme_Kanto.png"
+import badgeMarais from "../assets/badges/Badge_Marais_Kanto.png"
+import badgeVolcan from "../assets/badges/Badge_Volcan_Kanto.png"
+import badgeTerre from "../assets/badges/Badge_Terre_Kanto.png"
 
 
 export const badgesList = [

@@ -1,9 +1,11 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import Pokemons from './Pokemons';
-import { pokemonsList } from '../datas/pokemonsList';
+import { allPokemons, pokemonsList, recupImage } from '../datas/pokemonsList';
 import { badgesList } from '../datas/badgesList';
-import { recupImage } from '../datas/pokemonsList';
+
+
+
 
 function App() {
     // creation des useState
@@ -16,6 +18,7 @@ function App() {
     // levelOfBadgeSelected (10... 20... 30..)
     const badgeSelected = badgesList.filter((badge) => badge.level === levelOfBadgeSelected)
     const imageOfBadge = badgeSelected[0].image
+
 
 
 
@@ -35,7 +38,6 @@ function App() {
         // Appel :
         loadImagesFromApi()
     }, [])
-
 
 
     return (
