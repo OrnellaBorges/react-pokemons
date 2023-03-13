@@ -8,10 +8,8 @@ function Pokemons({tuyau}) {
 
     //tableau.push('orange')
     //['mangue', 'fraise', 'orange']
-
     //setTableau(     [ ...tableau , 'orange']     )
-
-    const villes = ['Paris', 'Bordeaux', 'Nantes']
+    //const villes = ['Paris', 'Bordeaux', 'Nantes']
 
     //JSX
     return (
@@ -24,15 +22,11 @@ function Pokemons({tuyau}) {
                     </li>
                 )}
             </ul>
-            <p>Choisissez votre ville :</p>
+            {/* <p>Choisissez votre ville :</p>
 
             {villes.map( (ville, index) =>
                 <button onClick={() => tuyau(ville)} key={index}>{ville}</button>
-            )}
-
-            
-
-
+            )} */}
         </div>
     )
 }

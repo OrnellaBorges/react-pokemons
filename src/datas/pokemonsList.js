@@ -1,20 +1,31 @@
 import bulbizarre from '../assets/bulbizarre.png'
 import carapuce from '../assets/carapuce.png'
 
+// appel api pokemon
+
+export async function recupImage() {
+    for(let pokemon of pokemonsList) {
+        const requestFetch = await fetch(`https://pokebuildapi.fr/api/v1/pokemon/${pokemon.name}`);
+        const reponseFetch = await requestFetch.json();
+        pokemon.image = reponseFetch.image
+    }
+
+    return 'ok'
+}
+
+
 export const pokemonsList = [
     {
         name: 'Bulbizarre',
         id: '#1',
         level: 15,
-        type: 'plante',
-        image: bulbizarre
+        type: 'plante'
     },
     {
         name: 'Carapuce',
         id: '#2',
         level: 25,
-        type: 'eau',
-        image: carapuce
+        type: 'eau'
     },
     {
         name: 'Salameche',
@@ -27,7 +38,7 @@ export const pokemonsList = [
         type: 'electrique'
     },
     {
-        name: 'Ponita',
+        name: 'Ponyta',
         level: 55,
         type: 'feu'
     },
@@ -37,7 +48,7 @@ export const pokemonsList = [
         type: 'Normal'
     },
     {
-        name: 'Poisirène',
+        name: 'Poissirène',
         level: 75,
         type: 'eau'
     },

@@ -1,4 +1,4 @@
-const listBadges = [
+export const badgesList = [
     {
         name: 'Roche',
         level: 20
