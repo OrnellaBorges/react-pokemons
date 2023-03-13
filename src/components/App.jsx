@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-//import Pokemons from './Pokemons';
+import Pokemons from './Pokemons';
 import { pokemonsList } from '../datas/pokemonsList';
 import { badgesList } from '../datas/badgesList';
 import { recupImage } from '../datas/pokemonsList';
@@ -32,7 +32,6 @@ function App() {
                 setIsLoaded(true)
             }
         }
-
         // Appel :
         loadImagesFromApi()
     }, [])
@@ -41,23 +40,27 @@ function App() {
 
     return (
         <div className="App">
+
+            <Pokemons />
+
             {isLoaded ? 
                 <div>
-                    <div>
+                    <div className="container-select">
                         <label>Selectionnez votre badge:</label>
                         <select className="select-container" onChange={(e) => handleChange(e.target.value)}>
 
                             {badgesList.map((badge, index)=>
                                 <option key={index} value={badge.level}>{badge.name}</option>
                             )}
-
                         </select>
-                        <img src={imageOfBadge} alt="bjcbdkjc" />
+                                
+                        <div className="container-image-badge">
+                            <img src={imageOfBadge} alt="bjcbdkjc" />
+                        </div>
                         <span className="text-level">
-                            (niveau : {levelOfBadgeSelected})
+                            niveau : {levelOfBadgeSelected}
                         </span>
                     </div>
-                    {/* <Pokemons /> */}
                     <ul className="list-container-pokemon">
                         {pokemonsFiltered.map((pokemon, index) =>
                             <li className="list-pokemon" key={index}>

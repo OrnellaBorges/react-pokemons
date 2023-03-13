@@ -11,6 +11,12 @@
     font-size: calc(10px + 2vmin);
     color: white;
 }
+.container-select{
+    display: flex;
+}
+.container-image-badge{
+    width: 20px;
+}
 
 .list-container-pokemon{
     background-color: rgb(119, 23, 163);

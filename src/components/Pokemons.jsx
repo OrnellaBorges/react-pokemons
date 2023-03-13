@@ -1,32 +1,22 @@
 import {pokemonsList} from '../datas/pokemonsList.js'
 import './Pokemons.css'
 
-function Pokemons({tuyau}) {
-    //const [tableau, setTableau] = useState(['mangue', 'fraise'])
-    // INTELLIGENCE
+function Pokemons() {
 
+    // Intelligence
 
-    //tableau.push('orange')
-    //['mangue', 'fraise', 'orange']
-    //setTableau(     [ ...tableau , 'orange']     )
-    //const villes = ['Paris', 'Bordeaux', 'Nantes']
 
     //JSX
     return (
         <div>
-            <ul className='pkm-list-container'>
-                {pokemonsList.map(({name, image}, index) =>
-                    <li key={index} className='pkm-list'>
-                        <img className='pkm-img' src={image} alt={name} />
+            <ul className='container-image-pokemon'>
+                {pokemonsList.map(({image, id, name}, index) => 
+                    <li key={id}>
+                        <img src={image} alt="xxx"/>
                         <p>{name}</p>
                     </li>
                 )}
             </ul>
-            {/* <p>Choisissez votre ville :</p>
-
-            {villes.map( (ville, index) =>
-                <button onClick={() => tuyau(ville)} key={index}>{ville}</button>
-            )} */}
         </div>
     )
 }

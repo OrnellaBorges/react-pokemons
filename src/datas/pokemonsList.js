@@ -1,7 +1,5 @@
-import bulbizarre from '../assets/bulbizarre.png'
-import carapuce from '../assets/carapuce.png'
-
-// appel api pokemon
+// appel api pokemon 
+//pour mettre des clés image dans les objet de chaque pok
 
 export async function recupImage() {
     for(let pokemon of pokemonsList) {
@@ -28,31 +26,37 @@ export const pokemonsList = [
     },
     {
         name: 'Salameche',
+        id: '#3',
         level: 35,
         type: 'feu'
     },
     {
         name: 'Pikachu',
+        id: '#4',
         level: 45,
         type: 'electrique'
     },
     {
         name: 'Ponyta',
+        id: '#5',
         level: 55,
         type: 'feu'
     },
     {
         name: 'Evoli',
+        id: '#6',
         level: 65,
         type: 'Normal'
     },
     {
         name: 'Poissirène',
+        id: '#7',
         level: 75,
         type: 'eau'
     },
     {
         name: 'Mew',
+        id: '#8',
         level: 85,
         type: 'psy'
     }
