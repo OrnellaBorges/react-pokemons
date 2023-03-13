@@ -16,23 +16,24 @@ function App() {
         setLevelOfBadgeSelected(Number(value))
     }
 
-    async function handleClickButton(){
-        /* const requestFetch = await fetch('https://pokebuildapi.fr/api/v1/pokemon/Bulbizarre');
-        const reponseFetch = await requestFetch.json();
-        console.log(reponseFetch.image) */
-
-        const result = await recupImage()
-        console.log(result)
-
-        if(result === 'ok'){
-            setIsLoaded(true)
+    // appel useEffect
+    useEffect(() => {
+        // Déclaration :
+        async function loadImagesFromApi() {
+            const result = await recupImage()
+            if(result) {
+                setIsLoaded(true)
+            }
         }
 
-    }
+        // Appel :
+        loadImagesFromApi()
+    }, [])
+
+
 
     return (
         <div className="App">
-            <button onClick={() => handleClickButton()}>Recuper Images</button>
             {isLoaded ? 
                 <div>
                     <div>

@@ -9,8 +9,7 @@ export async function recupImage() {
         const reponseFetch = await requestFetch.json();
         pokemon.image = reponseFetch.image
     }
-
-    return 'ok'
+    return true
 }
 
 
