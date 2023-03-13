@@ -14,8 +14,9 @@ export async function recupImage() {
 export async function allPokemons(){
     const resApi = await fetch('https://pokebuildapi.fr/api/v1/pokemon/limit/20')
     const pokemons100 = await resApi.json()
-    //console.log('poke20',pokemons100)
-    return true
+
+    return pokemons100
+
 }
 
 export const pokemonsList = [
