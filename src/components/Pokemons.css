@@ -1,0 +1,23 @@
+.pkm-list-container{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.pkm-list{
+    width: 150px;
+    flex-direction: column;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+}
+
+.pkm-img {
+    max-width: 100%;
+}

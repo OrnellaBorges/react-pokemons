@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.select-container{
+    margin: 0 20px;
+}
+
+.text-level{
+    font-style: italic;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
