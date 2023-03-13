@@ -1,34 +1,65 @@
+import badgeRoche from "../assets/Badge_Roche_Kanto.png"
+import badgeCascade from "../assets/Badge_Cascade_Kanto.png"
+import badgeFoudre from "../assets/Badge_Foudre_Kanto.png"
+import badgePrisme from "../assets/Badge_Prisme_Kanto.png"
+import badgeAme from "../assets/Badge_Âme_Kanto.png"
+import badgeMarais from "../assets/Badge_Marais_Kanto.png"
+import badgeVolcan from "../assets/Badge_Volcan_Kanto.png"
+import badgeTerre from "../assets/Badge_Terre_Kanto.png"
+
+
+
+
+
+
+
+
 export const badgesList = [
     {
         name: 'Roche',
-        level: 20
+        level: 20,
+        image: badgeRoche
     },
     {
         name: 'Cascade',
-        level: 30
+        level: 30,
+        image: badgeCascade
     },
     {
         name: 'Foudre',
-        level: 40
+        level: 40,
+        image: badgeFoudre
+
+
     },
     {
         name: 'Prisme',
-        level: 50
+        level: 50,
+        image: badgePrisme
+
     },
     {
         name: 'Âme',
-        level: 60
+        level: 60,
+        image: badgeAme
+
     },
     {
         name: 'Marais',
-        level: 70
+        level: 70,
+        image: badgeMarais
+
     },
     {
         name: 'Volvan',
-        level: 80
+        level: 80,
+        image: badgeVolcan
+
     },
     {
         name: 'Terre',
-        level: 90
+        level: 90,
+        image: badgeTerre
+
     }
 ]

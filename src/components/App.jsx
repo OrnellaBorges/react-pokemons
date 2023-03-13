@@ -12,6 +12,13 @@ function App() {
     // pour chaque pokémon retourne les pokémons inférieurs ou égal au niveau du badge selectionné 
     const pokemonsFiltered = pokemonsList.filter(({level}) => level <= levelOfBadgeSelected)
 
+
+    // levelOfBadgeSelected (10... 20... 30..)
+    const badgeSelected = badgesList.filter((badge) => badge.level === levelOfBadgeSelected)
+    const imageOfBadge = badgeSelected[0].image
+
+
+
     function handleChange(value) {
         setLevelOfBadgeSelected(Number(value))
     }
@@ -45,12 +52,13 @@ function App() {
                             )}
 
                         </select>
+                        <img src={imageOfBadge} alt="bjcbdkjc" />
                         <span className="text-level">
                             (niveau : {levelOfBadgeSelected})
                         </span>
                     </div>
                     {/* <Pokemons /> */}
-                    <ul>
+                    <ul className="list-container-pokemon">
                         {pokemonsFiltered.map((pokemon, index) =>
                             <li className="list-pokemon" key={index}>
                                 <div className="container-image-pokemon">
