@@ -21,3 +21,11 @@
 .constainer-image-pokemon{
     width:100px;
 }
+
+.pkm-checkbox{
+    border: 1px solid white;
+}
+
+.pkm-checked {
+    background-color: green;
+}

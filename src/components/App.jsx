@@ -1,7 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import PokemonsBag from './PokemonsBag';
-import AllPokemons from './AllPokemons';
+import Pokedex from './Pokedex';
 
 import { pokemonsList, recupImage } from '../datas/pokemonsList';
 import { badgesList } from '../datas/badgesList';
@@ -45,9 +45,9 @@ function App() {
     return (
         <div className="App">
 
-            <AllPokemons/>
+            <Pokedex/>
 
-            <PokemonsBag />
+            {/* <PokemonsBag /> */}
 
             {isLoaded ? 
                 <div>
